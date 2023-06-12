@@ -1,3 +1,4 @@
+```
 $ sudo docker pull devopsdockeruh/simple-web-service:ubuntu
 ubuntu: Pulling from devopsdockeruh/simple-web-service
 ...
@@ -19,3 +20,4 @@ $ sudo docker exec -it brave_curran sh
 ...
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
 ...
+```
