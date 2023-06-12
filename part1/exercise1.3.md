@@ -1,3 +1,4 @@
+```
 $ sudo docker run -d -it --name secret devopsdockeruh/simple-web-service:ubuntu
 Unable to find image 'devopsdockeruh/simple-web-service:ubuntu' locally
 ubuntu: Pulling from devopsdockeruh/simple-web-service
@@ -10,3 +11,4 @@ tail -f ./text.log
 ...
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
 ...
+```
