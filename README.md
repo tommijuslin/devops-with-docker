@@ -1,1 +1,1 @@
-# DevOps With Docker 2023
+# DevOps with Docker 2023
