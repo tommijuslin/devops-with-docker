@@ -1,3 +1,4 @@
+```
 $ sudo docker container ls
 CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
 b9ebec6f1b0c   nginx     "/docker-entrypoint.…"   9 minutes ago   Up 9 minutes   80/tcp    unruffled_buck
@@ -19,3 +20,4 @@ $ sudo docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 $ sudo docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+```
