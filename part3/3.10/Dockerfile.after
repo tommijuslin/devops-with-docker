@@ -1,0 +1,21 @@
+FROM openjdk:8-jdk-alpine AS build-stage
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN ./mvnw package && adduser --disabled-password appuser
+
+
+FROM openjdk:8-jdk-alpine
+
+WORKDIR /usr/src/app
+
+COPY --from=build-stage /usr/src/app/target/docker-example-1.1.3.jar .
+COPY --from=build-stage /etc/passwd /etc/passwd
+
+USER appuser
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "docker-example-1.1.3.jar"]
