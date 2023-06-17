@@ -1,0 +1,19 @@
+FROM node:16
+
+ENV REACT_APP_BACKEND_URL=/api/
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm ci && \
+    npm run build && \
+    npm install -g serve && \
+    npm prune --production && \
+    useradd -m appuser
+
+USER appuser
+
+EXPOSE 5000
+
+CMD ["serve", "-s", "-l", "5000", "build"]
