@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN go build
-RUN adduser --disabled_password appuser
+RUN adduser --disabled-password appuser
 
 USER appuser
 
