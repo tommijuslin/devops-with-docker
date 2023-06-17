@@ -1,3 +1,5 @@
+Optimised Dockerfile for the example spring project.
+
 ```
 before:
 
